@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab2</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h2>HTML і CSS</h2>
+    </header>
+    <div class="content">
+	
+	<div id="container">
+        <div id="one">
+                <p>HTML (от англ. HyperText Markup Language — «язык гипертекстовой разметки») — стандартизированный язык гипертекстовой разметки 
+				документов для просмотра веб-страниц в браузере. <img src="https://play-lh.googleusercontent.com/MPDzYIvnXkFgILeyVYa1ZrBhWrQI6voJQ83R3TGhUvU4jjcV3ClQVlhuWDucmSkSwqc" style="float: left; width: 300px; height: auto; margin: 15px"> Веб-браузеры получают HTML документ от сервера по протоколам HTTP/HTTPS 
+				или открывают с локального диска, далее интерпретируют код в интерфейс, который будет отображаться на экране монитора. Элементы HTML являются 
+				строительными блоками HTML страниц. С помощью HTML разные конструкции, изображения и другие объекты, такие как интерактивная веб-форма, 
+				могут быть встроены в отображаемую страницу. HTML предоставляет средства для создания заголовков, абзацев, списков, ссылок, цитат и других элементов.</p>
+				<p>CSS (англ. Cascading Style Sheets, укр. Каскадні таблиці стилів) — <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" style="float: right; width: 250px; height: auto; margin: 15px;">  це спеціальна мова стилю сторінок[en], що використовується для опису їхнього зовнішнього вигляду.
+				Самі ж сторінки написані мовами розмітки даних.  CSS є основною технологією всесвітньої павутини, поряд із HTML та JavaScript[1].
+				Найчастіше CSS використовують для візуальної <img src="https://sariasan.com/wp-content/uploads/2023/01/word-image-83341-1.jpeg" style="float:none; width: 450px; height: auto;">презентації сторінок, написаних HTML та XHTML, 
+				але формат CSS може застосовуватися до інших видів XML-документів. Специфікації CSS були створені та розвиваються Консорціумом Всесвітньої мережі.</p>
+        </div>
+        <div id="two">
+            <img src="https://img-c.udemycdn.com/course/750x422/3497324_9102_4.jpg" id="img1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ21IK2GOhOCPDYQzT0PypANBe6SC3UwVLUfAbniM0TkcuBKrdVX53CXO8XtZvlStOJXU4&usqp=CAU" id="img2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz-4ITyK2I6mIlvNWrriG1lHI24ppKeuco6yvHPoOJp3_jYSnNwlqOvIdjQX6cw8fOV-E&usqp=CAU" id="img3" >
+        </div>
+    </div>
+    <nav class="nav">
+        <a href="#contacts" class="nav-link">Форма реєстрації</a>
+        <a href="#contacts" class="nav-link">Форма входу</a>
+        <a href="#contacts" class="nav-link">Форма зворотнього зв'язку</a>
+     </nav>
+  
+     <div id="signup">
+        <h2>Форма реєстрації</h2>
+        <form>
+           <div class="signup-row">
+              <div class="signup-column">
+                  <label for="name"><strong>Ім'я</strong></label>
+                  <input type="text" name="name" placeholder="Ім'я" pattern="^[A-ZА-Я][a-zа-я]{3,}" required>
+                  
+                  <label for="surname"><strong>Прізвище</strong></label>
+                  <input type="text" name="surname" placeholder="Прізвище" pattern="^[A-ZА-Я][a-zа-я]{5,}" required>
+                
+                  <label for="sex"><strong>Стать</strong></label>
+                  
+                  <div name="sex">
+                    <input type="radio" id="male" name="male">
+                    <label for="male">Чоловіча</label>
+                    <input type="radio" id="female" name="female">            
+                    <label for="female">Жіноча</label>
+                  </div>
+                  
+                  <label for="age"><strong>Вік</strong></label>
+                  <input name="age" type="number" min="16" max="120">
+                 
+                  <label><strong>Дата народження</strong>
+                <input type="date"></label>
+  
+              </div>
+              <div class="signup-column">
+                 <label><strong>Країна проживання</strong></label>
+                 
+                 <select>
+                    <option selected>Ukraine</option>
+                    <option>Sweden</option>
+                 </select>
+                 <label><strong>Номер телефону</strong></label>
+                 <input type="tel" pattern="\+380[0-9]{9}" placeholder="+380XXXXXXXXX"
+                    required>
+  
+                 <label><strong>Соцмережа</strong></label>
+                 <input type="text" placeholder="Соцмережа" required>
+  
+                 <label for="email"><strong>Електронна пошта</strong></label>
+                 <input type="email" name="email" placeholder="noreply@founder.com" required>  
+                 <label for="password"><strong>Пароль</strong></label>
+                 <input type="password" name="password" placeholder="******" required>
+  
+                 <div>
+                    <label for="checkbox">Чи згідні ви з умовами?</label>
+                    <input type="checkbox" name="checkbox">
+                 </div>
+              </div>
+           </div>
+           <div class="signup-submit">
+              <input type="submit">
+              <input type="reset">
+           </div>
+        </form>
+    </div>
+  
+     <div id="signin">
+        <h2>Форма входу</h2>
+        <form action="" class="sign-in">
+           <input type="text" placeholder="Логін" required>
+           <input type="password" placeholder="Пароль" required>
+           <input type="submit">
+        </form>
+    </div>
+  
+     <div id="contacts">
+        <h2>Форма зворотнього звязку</h2>
+        <form action="#">
+           <div class="contacts-row">
+              <div class="contacts-column">
+                 <input type="text" placeholder="Логін" required>
+                 <input type="mail" placeholder="Пошта" required>
+                 <input type="text" placeholder="Тема повідомлення" required>
+                 <input type="submit">
+              </div>
+              <div class="contacts-column">
+                 <textarea rows="10"></textarea>
+              </div>
+           </div>
+        </form>
+    </div>
+    </div>
+    <footer>
+           <a href="https://www.facebook.com/" >
+               Facebook
+           </a>
+           <a href="https://t.me" >
+               Telegram
+           </a>
+            <a href="tel: 044 204-80-98">
+               Phone
+            </a>
+            <a href="mailto: khomenko@outlook.com">
+                Email
+             </a>
+      </footer> 
+</body>
+</html>

@@ -1,0 +1,49 @@
+.line-block{
+    height: auto;
+    background-image: url("Line.png");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.first-block{
+    height: auto;
+    background-image: url("empty-floor-front-modern-building.png");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.da-block{
+    height: auto;
+    background-image: url("вниз.png");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.second-block{
+    height: auto;
+    background-image: url("2block.png");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media (max-width:992px){
+    .section-two-text{
+        text-align: center;
+    }
+}
+
+
+#sdvig {
+    position: relative;
+    left: 835px;
+}
+
+#myImage {
+    width: 55px;
+    height: auto;
+	margin-left: 235px;
+}

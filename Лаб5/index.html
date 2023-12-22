@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Адаптивний веб-дизайн. Flexbox Test</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Група: ТР-24</h1>
+    <h2>ПІБ: Хоменко Олег Святославович</h2>
+    <h3>Тест з адаптивного веб-дизайну. Flexbox</h3>
+  </header>
+  <main>
+    <div id="quiz-container">
+      <label for="difficulty">Оберіть рівень складності:</label>
+      <select id="difficulty" onchange="loadQuestions()">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+
+      <div id="questions-section">
+        <!-- Тут будуть питання і відповіді -->
+      </div>
+    </div>
+    <button id="submit-btn" onclick="submitAnswers()">Подати відповіді</button>
+  </main>
+  <script src="questions.js"></script>
+  <script src="quiz.js"></script>
+</body>
+</html>

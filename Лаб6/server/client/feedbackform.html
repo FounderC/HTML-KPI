@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <title>Форма відгуку</title>
+    <style>
+        @import url(./css-files/style_feedback_form.css);
+    </style>
+</head>
+<body>
+<header class="header">
+    <br>
+    <h1>Форма відгуку</h1>
+    <ul>
+        <li>
+            <a href="loginform.html">Форма входу</a>
+        </li>
+        <li>
+            <a href="registrationform.html">Форма реєстрації</a>
+        </li>
+    </ul>
+    <br>
+</header>
+<main class="main">
+    <br><br>
+    <form class="form">
+        <div class="form-img">
+            <img src="./pictures/socialnetwork_feedback_form_1.jpg" height="300px">
+        </div>
+        <div class="form-row">
+            <div class="form-column-1">
+                <label for="Name">Ім'я</label><br>
+                <input tabindex="1" type="text" id="Name" placeholder="Ім'я"><br>
+                <br>
+                <label for="Email">Електронна пошта</label><br>
+                <input tabindex="2" type="email" id="Email" placeholder="Електронна пошта"><br>
+                <br>
+                <label for="Subject">Тема</label><br>
+                <input tabindex="3" type="text" id="Subject" placeholder="Тема"><br>
+            </div>
+            <div class="form-column-2">
+                <label for="Massage">Повідомлення</label><br>
+                <textarea tabindex="4" class="form-textarea" id="Massage" cols="40" rows="10" placeholder="Текст повідомлення..."></textarea>
+            </div>
+        </div>
+        <div class="form-button-submit">
+            <button class="for-button" tabindex="5" id="Feedback Button">Надіслати</button>
+        </div>
+        <br>
+        <br>
+    </form>
+</main>
+<footer class="footer" id="контакти">
+    <ul>
+        <li>
+            Моб. xxx xxx-xx xx
+        </li>
+        <li>
+            Електронна пошта: xxxx@xxxx.xxx
+        </li>
+        <li>
+            Skype: xxxxxxxxxx
+        </li>
+    </ul>
+</footer>
+<script src="./script/feedbackscript.js"></script>
+</body>
+</html>
